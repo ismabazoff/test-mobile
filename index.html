@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/all.min.css" />
+        <title>Тестовое задание</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>FTL: Прямая машина</h1>
+            <section class="route">
+                <h3><span>1</span> Маршрут</h3>
+                <p>Откуда</p>
+                <input type="text" />
+                <p>Куда</p>
+                <input type="text" />
+            </section>
+            <section class="transport">
+                <h3><span>2</span> Транспорт</h3>
+                <div class="transport__item">
+                    <div>
+                        <p>Грузоподьёмность</p>
+                        <select name="" id="">
+                            <option value="">Не выбрано</option>
+                            <option value="">Варинат 1</option>
+                            <option value="">Варинат 2</option>
+                            <option value="">Варинат 3</option>
+                            <option value="">Варинат 4</option>
+                            <option value="">Варинат 5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Способ погрузки</p>
+                        <select name="" id="">
+                            <option value="">Задняя</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="cargo">
+                <h3><span>3</span>Груз</h3>
+                <div class="container">
+                    <div class="first">
+                        <p>Тип груза</p>
+                        <select name="" id="">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="second">
+                        <p>Класс опасности</p>
+                        <select name="" id="">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="third">
+                        <p>Объявленная ценность, ₽</p>
+                        <input type="text" placeholder=">1" />
+                    </div>
+                    <div class="fourth">
+                        <input type="checkbox" /><label
+                            >Требуется температурный режим</label
+                        >
+                    </div>
+                </div>
+                <div class="container__mobile">
+                    <div class="first">
+                        <p>Тип груза</p>
+                        <select name="" id="">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="second">
+                        <p>Объявленная ценность, ₽</p>
+                        <input type="text" placeholder=">1" />
+                    </div>
+                    <div class="third">
+                        <input type="checkbox" /><label
+                            >Требуется температурный режим</label
+                        >
+                    </div>
+                    <div class="fourth">
+                        <p>От С</p>
+                        <input type="text" placeholder="-20" />
+                    </div>
+                    <div class="fifth">
+                        <p>До С</p>
+                        <input type="text" placeholder="+23" />
+                    </div>
+                </div>
+            </section>
+            <section class="time">
+                <h3><span>4</span>Время</h3>
+                <div class="time__destination">
+                    <p>Когда прибыть на точку</p>
+                    <p>700 км в день</p>
+                </div>
+                <div class="time__address">
+                    <p>Адрес не указан</p>
+                    <button>НЕ ВЫБРАНО</button>
+                </div>
+                <div class="time__address">
+                    <p>Адрес не указан</p>
+                    <button>НЕ ВЫБРАНО</button>
+                </div>
+                <p>Комментарий к заказу</p>
+                <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"
+                ></textarea>
+            </section>
+            <div class="params">
+                <p>
+                    Для расчета стоимости необходимо ввести параметры груза,
+                    пункты отправки и прибытия.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

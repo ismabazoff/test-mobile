@@ -1,0 +1,296 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 40px 0 129px 170px;
+  background-color: #343539;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 68px;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+span {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #ef483e;
+}
+
+h3 {
+  margin-bottom: 19px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.route input {
+  width: 728px;
+  height: 44px;
+}
+
+.transport select {
+  width: 172px;
+  height: 44px;
+  margin-right: 12px;
+  padding: 0 10px;
+}
+
+.transport__item {
+  display: flex;
+}
+
+.cargo input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.container {
+  display: grid;
+  width: 356px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 1px 1px;
+  grid-auto-flow: row;
+}
+
+.container .first {
+  grid-area: 1/1/2/3;
+}
+
+.container .first select,
+.container .second select {
+  width: 356px;
+  height: 44px;
+  padding: 0 10px;
+}
+
+.container .first p,
+.container .second p,
+.container .third p,
+p {
+  font-size: 13px;
+  font-style: normal;
+}
+
+.container .second {
+  grid-area: 2/1/3/2;
+}
+
+.container .second select {
+  width: 172px;
+  margin-right: 12px;
+}
+
+.container .third {
+  grid-area: 2/2/3/3;
+}
+
+.container .third input {
+  width: 147px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.container .fourth {
+  display: flex;
+  grid-area: 3/1/4/3;
+  align-items: center;
+}
+
+.container__mobile {
+  display: none;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 2px 2px;
+  grid-auto-flow: row;
+}
+
+.container__mobile .first {
+  margin-right: 8px;
+  grid-area: 1/1/2/2;
+}
+
+.container__mobile .second {
+  grid-area: 1/2/2/3;
+}
+
+.container__mobile .third {
+  display: flex;
+  grid-area: 2/1/3/3;
+  align-items: center;
+}
+
+.container__mobile .fourth {
+  grid-area: 3/1/4/2;
+}
+
+.container__mobile .fifth {
+  grid-area: 3/2/4/3;
+}
+
+.time textarea {
+  width: 728px;
+  height: 80px;
+  padding: 8px;
+}
+
+.params p,
+.time p {
+  font-size: 15px;
+}
+
+.time__destination {
+  display: flex;
+  width: 728px;
+  justify-content: space-between;
+}
+
+.time__address {
+  display: flex;
+  width: 728px;
+  margin-bottom: 4px;
+  padding: 10px;
+  background: #4b4b4f;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time__address button {
+  width: 119px;
+  height: 24px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  background: #717174;
+}
+
+.params {
+  position: absolute;
+  top: 128px;
+  left: 914px;
+  display: flex;
+  width: 308px;
+  height: 54px;
+  padding: 24px;
+  background: #4b4b4f;
+  align-items: center;
+}
+
+@media screen and (max-width:375px) {
+  body {
+    padding: 40px 13px 37px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .route input {
+    width: 343px;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .container__mobile {
+    display: grid;
+  }
+
+  .container__mobile select {
+    width: 172px;
+    height: 44px;
+    padding: 0 10px;
+  }
+
+  .container__mobile input {
+    width: 165px;
+    height: 38px;
+  }
+
+  .time textarea {
+    width: 338px;
+  }
+
+  .time__destination {
+    width: 343px;
+  }
+
+  .time__address {
+    width: 335px;
+  }
+
+  .params {
+    position: static;
+  }
+}
